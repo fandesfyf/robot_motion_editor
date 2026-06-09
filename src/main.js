@@ -1702,8 +1702,8 @@ class RobotKeyframeEditor {
     } else {
       this.cameraMode = 'rotate';
       this.controls.enableRotate = true;
-      this.controls.enablePan = false;
-      // 恢复默认：鼠标左键为旋转
+      this.controls.enablePan = true;
+      // 恢复默认：左键旋转、右键平移
       this.controls.mouseButtons = {
         LEFT: THREE.MOUSE.ROTATE,
         MIDDLE: THREE.MOUSE.DOLLY,
